@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.wizarpos.q1.cashier"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.22"
+                android:id="@+id/backBtn"
+                android:text="返回"
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="搜索结果"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="@android:color/white"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.17"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:background="@android:color/transparent">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom"
+            android:textAlignment="gravity"
+            android:weightSum="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:background="@android:color/white">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/codeNumberList"
+                    android:visibility="gone"
+                    android:background="@drawable/layout_line_no_border"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/noCodeNumberBtn"
+                    android:visibility="gone"
+                    android:text="无相关交易"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@android:color/black"
+                    android:drawableTop="@drawable/error_large_btn"
+                    android:background="@drawable/layout_line_no_border"/>
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                android:id="@+id/backHomeBtn"
+                android:textAlignment="center"
+                android:background="@color/ui_light_gray">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

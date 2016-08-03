@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="返回"
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:id="@+id/backHomeBtn"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="预授权完成撤销"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="#ffff"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=""
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:id="@+id/signInBtn"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:background="@android:color/transparent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.30"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="凭证号:"
+                        android:textAlignment="gravity"
+                        android:id="@+id/t1"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:text="123456"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="gravity"
+                        android:id="@+id/tradeNumber"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="交易卡号:"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:textAlignment="gravity"
+                        android:text="6214 0000 0000 1111"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/authorCode"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="交易金额:"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:textAlignment="gravity"
+                        android:text="¥5.00"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tradeDatePick"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="参考号:"
+                        android:textAlignment="gravity"
+                        android:id="@+id/t2"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:textAlignment="gravity"
+                        android:text="123444222229"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/referenceNo"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:text="交易类型:"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:textAlignment="gravity"
+                        android:text="预授权完成"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/amountText"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.11"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92"
+                    android:text="刷卡确认"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ui_title_size"
+                    android:id="@+id/crashCardConfirm"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.11"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92"
+                    android:text="手输确认"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/ui_title_size"
+                    android:id="@+id/inputConfirm"
+                    android:background="@drawable/layout_line_border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

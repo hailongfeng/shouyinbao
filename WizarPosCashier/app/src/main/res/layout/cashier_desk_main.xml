@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/title"
+                android:text=""
+                android:textSize="@dimen/back_title_size"
+                android:textColor="@android:color/white"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="收银台"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="#ffff"
+                android:textAlignment="center"
+                android:layout_weight="0.90">
+
+            </TextView>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="管理"
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:id="@+id/manageBtn"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_gravity="center"
+            android:weightSum="1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_line_border"
+                android:weightSum="0.9">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/title1"
+                    android:text="">
+
+                </TextView>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:id="@+id/cashImBtn"
+                    android:text="收银"
+                    android:textSize="14dp"
+                    android:drawableLeft="@drawable/cashier_image_btn"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/title2"
+                    android:text="">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.11"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/layout_line_border"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:id="@+id/grantBtn"
+                        android:text="预授权"
+                        android:background="@android:color/white"/>
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:text="撤销"
+                        android:id="@+id/cancelBtn"
+                        android:background="@android:color/white"/>
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:text="退货"
+                        android:id="@+id/refundBtn"
+                        android:background="@android:color/white"/>
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:text="余额查询"
+                        android:id="@+id/balanceBtn"
+                        android:background="@android:color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.38"
+                android:layout_marginTop="5dp"
+                android:weightSum="1">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:drawableTop="@drawable/unionpay_normal"
+                        android:text="银联钱包"
+                        android:textSize="14dp"
+                        android:id="@+id/unionPayImBtn"
+                        android:background="@android:color/white"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="优惠券"
+                        android:textSize="14dp"
+                        android:drawableTop="@drawable/couponpay_normal"
+                        android:id="@+id/couponPayImBtn"
+                        android:background="@android:color/white"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="订单支付"
+                        android:textSize="14dp"
+                        android:drawableTop="@drawable/orderpay_normal"
+                        android:id="@+id/orderPayImBtn"
+                        android:background="@android:color/white"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="云账户"
+                        android:textSize="14dp"
+                        android:drawableTop="@drawable/cloudpay_normal"
+                        android:id="@+id/cloudPayImBtn"
+                        android:background="@android:color/white"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.11"
+                android:layout_marginTop="5dp"
+                android:text="结算"
+                android:textSize="@dimen/list_title_size"
+                android:id="@+id/settleBtn"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/layout_line_border"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.16"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/allTradeSelectBtn"
+                    android:text="交易查询"
+                    android:textSize="@dimen/list_title_size"
+                    android:background="@drawable/layout_line_border"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="末笔查询"
+                    android:textSize="@dimen/list_title_size"
+                    android:id="@+id/lastTradeSelectBtn"
+                    android:background="@drawable/layout_line_border"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

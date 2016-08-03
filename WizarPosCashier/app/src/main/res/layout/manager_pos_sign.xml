@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="#3a9bfc"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="返回"
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:id="@+id/backBtn"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="签到"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="#ffff"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=""
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:id="@+id/signInBtn"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:background="@android:color/transparent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="20dp"
+                    android:hint="账号："
+                    android:ems="10"
+                    android:id="@+id/accountText"
+                    android:background="@drawable/layout_line_border"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="20dp"
+                    android:hint="密码："
+                    android:ems="10"
+                    android:id="@+id/passwordText"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/layout_line_border"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.11"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.03"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/title1"
+                    android:background="@android:color/transparent">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:text="立即签到"
+                    android:textColor="#ffff"
+                    android:textSize="@dimen/ui_title_size"
+                    android:id="@+id/signQuickBtn"
+                    android:enabled="false"
+                    android:background="#3a9bfc"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.03"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/title2"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.67"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tradecode">
+        <item>交易单号</item>
+        <item>凭证号</item>
+    </string-array>
+</resources>

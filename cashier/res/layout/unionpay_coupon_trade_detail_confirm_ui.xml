@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.wizarpos.q1.cashier"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/ui_deep_gray"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:id="@+id/backBtn"
+                android:text=""
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="交易信息确认"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="@android:color/white"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:id="@+id/operateBtn"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:background="@android:color/transparent">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:background="@color/ui_light_gray"
+            android:weightSum="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.88"
+                android:gravity="top"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:paddingLeft="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/ui_light_gray"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical"
+                        android:text="交易卡号："
+                        android:textAlignment="gravity"
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:text="6214 0000 0000 1111"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/img_btn_text_size"
+                        android:id="@+id/textView5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/layout_line_border"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical"
+                        android:text="优惠券："
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/textView4" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.68"
+                        android:gravity="right"
+                        android:text="美食日满2减1"
+                        android:textAlignment="gravity"
+                        android:textSize="@dimen/text_size_18"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/amountText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.35"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:textAlignment="gravity"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/layout_line_border"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/white"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="left"
+                            android:text="交易金额："
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/t5" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.71"
+                            android:gravity="right"
+                            android:text="¥2.00"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/payMethod" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/white"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="left"
+                            android:text="优惠金额："
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/t6" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.71"
+                            android:gravity="right"
+                            android:text="-¥1.00"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textAlignment="gravity"
+                            android:id="@+id/tradeOdd" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.005"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/white"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.75"
+                            android:gravity="right"
+                            android:text="实付"
+                            android:textSize="@dimen/text_size_25"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/t8" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:layout_weight="0.25"
+                            android:gravity="center_horizontal"
+                            android:text="¥1.00"
+                            android:textAlignment="gravity"
+                            android:textSize="@dimen/text_size_25"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:id="@+id/tradeOperator" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.12"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                android:textAlignment="center"
+                android:background="@color/colorPrimary">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/confirmBtn"
+                    android:text="确认"
+                    android:textSize="@dimen/text_size_20"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="gravity"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

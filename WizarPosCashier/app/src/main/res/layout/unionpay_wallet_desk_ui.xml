@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_light_gray"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="返回"
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:id="@+id/backBtn"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="银联钱包"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="@android:color/white"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text=""
+                android:textSize="@dimen/back_title_size"
+                android:textColor="@android:color/white"
+
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="0.9">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:background="@drawable/layout_line_border">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/layout_line_border">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="优惠券"
+                        android:id="@+id/couponBtn"
+                        android:layout_gravity="center_vertical"
+                        android:drawableTop="@drawable/pre_author"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/layout_line_border">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="电子票"
+                        android:id="@+id/eticketBtn"
+                        android:layout_gravity="center_vertical"
+                        android:drawableTop="@drawable/pre_author_ok"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:background="@drawable/layout_line_border">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/layout_line_border">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="积分"
+                        android:id="@+id/scoreBtn"
+                        android:layout_gravity="center_vertical"
+                        android:drawableTop="@drawable/cancel_pre_author"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/layout_line_border">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="撤销"
+                        android:id="@+id/cancelBtn"
+                        android:layout_gravity="center_vertical"
+                        android:drawableTop="@drawable/cancel_pre_author_ok"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:background="@drawable/layout_line_border">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:background="@drawable/layout_line_border">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="退货"
+                        android:id="@+id/returnGoodBtn"
+                        android:layout_gravity="center_vertical"
+                        android:drawableTop="@drawable/cancel_pre_author"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:background="@color/ui_light_gray">
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

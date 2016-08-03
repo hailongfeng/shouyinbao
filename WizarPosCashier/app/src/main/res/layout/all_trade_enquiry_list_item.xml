@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CashierMainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="2dp"
+        android:background="@android:color/white"
+        android:weightSum="0.895">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:text="¥ 0.01"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@android:color/black"
+                android:id="@+id/tradePrice" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="交易成功"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@android:color/black"
+                android:id="@+id/tradeStatus" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:text="交易时间:"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:text="2016-3-31 16:50:33"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@android:color/black"
+                android:id="@+id/tradeTime" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:text="交易单号:"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:text="123333333333333333333333333333"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@android:color/black"
+                android:id="@+id/tradeNumber" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.005"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

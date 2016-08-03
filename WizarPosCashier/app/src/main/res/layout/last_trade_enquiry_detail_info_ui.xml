@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".Activity.CashierMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.22"
+                android:id="@+id/backBtn"
+                android:text="返回"
+                android:textSize="@dimen/back_title_size"
+                android:textColor="#ffff"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hintTitle"
+                android:text="查询结果"
+                android:textSize="@dimen/ui_title_size"
+                android:textColor="@android:color/white"
+                android:textAlignment="center">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.17"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:background="@android:color/transparent">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="top"
+            android:textAlignment="gravity"
+            android:weightSum="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:background="@android:color/white">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:visibility="gone"
+                    android:enabled="false"
+                    android:text="交易状态"
+                    android:id="@+id/tradeSuccessStatus"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@android:color/black"
+                    android:drawableTop="@drawable/correct_large_btn"
+                    android:background="@drawable/layout_line_no_border"/>
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:visibility="gone"
+                    android:enabled="false"
+                    android:text="交易状态"
+                    android:id="@+id/tradeCancelStatus"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@android:color/black"
+                    android:drawableTop="@drawable/error_large_btn"
+                    android:background="@drawable/layout_line_no_border"/>
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.38"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:background="@android:color/white">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.12"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                android:id="@+id/backHomeBtn"
+                android:textAlignment="gravity"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/store_home_icon"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="gravity"
+                    android:background="@android:color/transparent" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="返回首页"
+                    android:textSize="@dimen/img_btn_text_size"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="gravity"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/backHome" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

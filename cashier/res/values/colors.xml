@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3a9bfc</color>
+    <color name="colorPrimaryDark">#3a9bfc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_background_color">#ffff</color>
+    <color name="ui_deep_gray">#666666</color>
+    <color name="ui_light_gray">#e4e4e4</color>
+    <color name="black">#000000</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>
